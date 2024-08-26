@@ -376,7 +376,6 @@
 "Assets/Plugins/FMOD/src/Editor/FMODEventTrackEditor.cs"
 "Assets/Plugins/FMOD/src/Editor/ListView.cs"
 "Assets/Plugins/FMOD/src/Editor/ParamRefDrawer.cs"
-"Assets/Plugins/FMOD/src/Editor/SettingsEditor.cs"
 "Assets/Plugins/FMOD/src/Editor/SetupWizard.cs"
 "Assets/Plugins/FMOD/src/Editor/StudioBankLoaderEditor.cs"
 "Assets/Plugins/FMOD/src/Editor/StudioEventEmitterEditor.cs"
