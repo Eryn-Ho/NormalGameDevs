@@ -368,7 +368,6 @@
 "Assets/Scripts/Controller.cs"
 "Assets/Scripts/CustomCharacterMovement3D.cs"
 "Assets/Scripts/PlayerController.cs"
-"Assets/Scripts/Weapon.cs"
 -langversion:9.0
 
 /deterministic

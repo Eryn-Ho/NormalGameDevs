@@ -72,6 +72,7 @@
     <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorSettings.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\BankRefDrawer.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\CreateEventPopup.cs" />
+    <Compile Include="Assets\Plugins\FMOD\src\Editor\SettingsEditor.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\SetupWizard.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioEventEmitterEditor.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorEventRef.cs" />

@@ -27,21 +27,19 @@ public class PlayerController : Controller
         _movement.Jump();
     }
 
-    /*
     public void OnShoot()
     {
         // assume weapon 0 is gun
-        Weapon weapon = _weapons[0];
-        weapon.TryAttack(_aimPosition, _targetable.Team, gameObject);
+        //Weapon weapon = _weapons[0];
+        //weapon.TryAttack(_aimPosition, _targetable.Team, gameObject);
     }
 
     public void OnMelee()
     {
         // assume weapon 1 is melee
-        Weapon weapon = _weapons[1];
-        weapon.TryAttack(_aimPosition, _targetable.Team, gameObject);
+        //Weapon weapon = _weapons[1];
+        //weapon.TryAttack(_aimPosition, _targetable.Team, gameObject);
     }
-    */
 
     private void Update()
     {
@@ -51,7 +49,6 @@ public class PlayerController : Controller
         _movement.SetMoveInput(moveInput3D);
 
         // use Raycast to find world position of mouse
-        /*
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(mouseRay, out RaycastHit hit, Mathf.Infinity, _groundMask))
         {
@@ -60,7 +57,7 @@ public class PlayerController : Controller
             Plane aimPlane = new Plane(Vector3.up, mouseWorldPosition + Vector3.up);
 
             // raycast against virtual plane, returning distance to plane along our mouse ray
-            if(aimPlane.Raycast(mouseRay, out float planeDistance))
+            if (aimPlane.Raycast(mouseRay, out float planeDistance))
             {
                 // move mouse world position to intersection point on plane
                 mouseWorldPosition = mouseRay.GetPoint(planeDistance);
@@ -73,6 +70,5 @@ public class PlayerController : Controller
 
             _aimPosition = mouseWorldPosition;
         }
-        */
     }
 }

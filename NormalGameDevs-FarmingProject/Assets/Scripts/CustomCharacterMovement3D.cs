@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-//using Unity.VisualScripting;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -77,14 +77,12 @@ public class CustomCharacterMovement3D : MonoBehaviour
         _navMeshAgent.updateRotation = false;
 
         // assign frictionless material to collider
-        
         _capsuleCollider.material = new PhysicMaterial("NoFriction")
         {
             staticFriction = 0f,
             dynamicFriction = 0f,
             frictionCombine = PhysicMaterialCombine.Minimum
         };
-        
 
         // set up avoidance values
         _neighborHits = new Collider[16];
@@ -94,7 +92,7 @@ public class CustomCharacterMovement3D : MonoBehaviour
     public void SetMoveInput(Vector3 input)
     {
         input = Vector3.ClampMagnitude(input, 1f);
-        if(input.magnitude > 0.1f)
+        if (input.magnitude > 0.1f)
         {
             input = new Vector3(input.x, 0f, input.z);
             MoveInput = input;
@@ -148,7 +146,7 @@ public class CustomCharacterMovement3D : MonoBehaviour
         float speed = _speed;
 
         // TODO: move according to navigation
-        if(_navMeshAgent.hasPath)
+        if (_navMeshAgent.hasPath)
         {
             Vector3 nextPathPoint = _navMeshAgent.path.corners[1];
             Vector3 pathDir = (nextPathPoint - transform.position).normalized;
@@ -191,7 +189,7 @@ public class CustomCharacterMovement3D : MonoBehaviour
 
         // TODO: turn character
         // ensure look direction is correct
-        if(LookDirection.magnitude > 0.1f)
+        if (LookDirection.magnitude > 0.1f)
         {
             // turn look direction (Vector3) into rotation (Quaternion)
             Quaternion targetRotation = Quaternion.LookRotation(LookDirection);

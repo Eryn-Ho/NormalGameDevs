@@ -1,15 +1,14 @@
-//using CharacterMovement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// enforce components
+
 [RequireComponent(typeof(CustomCharacterMovement3D))]
 //[RequireComponent(typeof(Vision))]
 //[RequireComponent(typeof(Targetable))]
 public class Controller : MonoBehaviour
 {
-    [Header("Components")]
+    //[Header("Components")]
     [SerializeField] protected CustomCharacterMovement3D _movement;
     //[SerializeField] protected Vision _vision;
     //[SerializeField] protected Targetable _targetable;
